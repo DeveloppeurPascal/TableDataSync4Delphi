@@ -8,7 +8,7 @@ You will know more with [this repository](https://github.com/DeveloppeurPascal/D
 
 This code repository contains a project developed in Object Pascal language under Delphi. You don't know what Delphi is and where to download it ? You'll learn more [on this web site](https://delphi-resources.developpeur-pascal.fr/).
 
-## Using this ibrary
+## Using this library
 
 You can also [visit the library website](https://tabledatasync.developpeur-pascal.fr/) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
 
