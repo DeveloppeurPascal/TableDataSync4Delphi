@@ -2,9 +2,11 @@
 
 [This page in english.](README.md)
 
-Librairie de synchronisation de données accessibles avec FireDAC sous Delphi.
+Ce dépôt de code contient un librairie de synchronisation de données accessibles avec FireDAC sous Delphi. La librarie utilise une API REST nommée Table Data Sync dont il existe d'autres implémentations dans différents langages pour des clients et les serveurs de synchronization.
 
-Vous en saurez plus avec [ce dépôt](https://github.com/DeveloppeurPascal/DelphiSummit2024-Synchronize-Your-Databases) après la conférence [Delphi Summit 2024](https://delphisummit.com/).
+Ce système de synchronization existe depuis 2017 dans différentes versions. Vous trouverez ici sa dernière itération, qui est utilisée dans plusieurs projets personnels mais aussi d'autres projets disponibles sur [mon compte GitHub](https://github.com/DeveloppeurPascal).
+
+Ce projet et ses exemples ont été montrés pour la première fois en public lors de la conférence [Delphi Summit 2024](https://delphisummit.com/). Consultez [ce dépôt](https://github.com/DeveloppeurPascal/DelphiSummit2024-Synchronize-Your-Databases) pour en obtenir la présentation, les exemples, les liens vers les rediffusions et d'autres ressources.
 
 Ce dépôt de code contient un projet développé en langage Pascal Objet sous Delphi. Vous ne savez pas ce qu'est Dephi ni où le télécharger ? Vous en saurez plus [sur ce site web](https://delphi-resources.developpeur-pascal.fr/).
 
