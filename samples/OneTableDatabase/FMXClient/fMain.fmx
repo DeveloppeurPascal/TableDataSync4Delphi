@@ -1,0 +1,112 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'One Table Database Sample'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 405.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Bottom
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Position.Y = 430.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object Switch1: TSwitch
+      Align = Right
+      Enabled = False
+      IsChecked = False
+      Position.X = 557.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 78.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Align = Left
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Button1'
+      TextSettings.Trimming = None
+      OnClick = Button1Click
+    end
+    object ProgressBar1: TProgressBar
+      Align = Client
+      Orientation = Horizontal
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 462.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Timer1: TTimer
+    Interval = 5000
+    OnTimer = Timer1Timer
+    Left = 304
+    Top = 88
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite')
+    LoginPrompt = False
+    AfterConnect = FDConnection1AfterConnect
+    BeforeConnect = FDConnection1BeforeConnect
+    Left = 536
+    Top = 136
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 536
+    Top = 200
+  end
+  object FDTable1: TFDTable
+    BeforePost = FDTable1BeforePost
+    Connection = FDConnection1
+    Left = 536
+    Top = 264
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDTable1
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+  end
+end
