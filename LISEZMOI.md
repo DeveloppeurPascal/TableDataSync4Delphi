@@ -1,6 +1,6 @@
 # Table Data Sync pour Delphi
 
-[This page in english.](README.md)
+[This page in English.](README.md)
 
 Ce dépôt de code contient un librairie de synchronisation de données accessibles avec FireDAC sous Delphi. La librarie utilise une API REST nommée Table Data Sync dont il existe d'autres implémentations dans différents langages pour des clients et les serveurs de synchronization.
 
@@ -9,6 +9,17 @@ Ce système de synchronization existe depuis 2017 dans différentes versions. Vo
 Ce projet et ses exemples ont été montrés pour la première fois en public lors de la conférence [Delphi Summit 2024](https://delphisummit.com/). Consultez [ce dépôt](https://github.com/DeveloppeurPascal/DelphiSummit2024-Synchronize-Your-Databases) pour en obtenir la présentation, les exemples, les liens vers les rediffusions et d'autres ressources.
 
 Ce dépôt de code contient un projet développé en langage Pascal Objet sous Delphi. Vous ne savez pas ce qu'est Dephi ni où le télécharger ? Vous en saurez plus [sur ce site web](https://delphi-resources.developpeur-pascal.fr/).
+
+## Présentations et conférences
+
+### Delphi Summit 2024
+
+* [talk title](talk URL) (in English)
+* [talk title](talk URL) (in French)
+
+### Twitch
+
+Suivez les streams de développement de jeux vidéo sur [ma chaîne Twitch](https://www.twitch.tv/patrickpremartin) ou en rediffusion sur [Serial Streameur](https://serialstreameur.fr) la plupart du temps en français.
 
 ## Utiliser cette librairie
 
@@ -21,6 +32,16 @@ Pour télécharger ce dépôt de code il est recommandé de passer par "git" mai
 Ce dépôt utilise des dépendances sous forme de sous modules. Ils seront absents du fichier ZIP. Vous devrez les télécharger à la main.
 
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) doit être installé dans le sous dossier samples/lib-externes/librairies
+
+## Compatibilité
+
+En tant que [MVP Embarcadero](https://www.embarcadero.com/resources/partners/mvp-directory) je bénéficie dès qu'elles sortent des dernières versions de [Delphi](https://www.embarcadero.com/products/delphi) et [C++ Builder](https://www.embarcadero.com/products/cbuilder) dans [RAD Studio](https://www.embarcadero.com/products/rad-studio). C'est donc dans ces versions que je travaille.
+
+Normalement mes librairies et composants doivent aussi fonctionner au moins sur la version en cours de [Delphi Community Edition](https://www.embarcadero.com/products/delphi/starter).
+
+Aucune garantie de compatibilité avec des versions antérieures n'est fournie même si je m'efforce de faire du code propre et ne pas trop utiliser les nouvelles façons d'écrire dedans (type inference, inline var et multilines strings).
+
+Si vous détectez des anomalies sur des versions antérieures n'hésitez pas à [les rapporter](https://github.com/DeveloppeurPascal/TableDataSync4Delphi/issues) pour que je teste et tente de corriger ou fournir un contournement.
 
 ## Licence d'utilisation de ce dépôt de code et de son contenu
 

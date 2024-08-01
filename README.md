@@ -10,6 +10,17 @@ The project and some samples have been showed at the [Delphi Summit 2024](https:
 
 This code repository contains a project developed in Object Pascal language under Delphi. You don't know what Delphi is and where to download it ? You'll learn more [on this web site](https://delphi-resources.developpeur-pascal.fr/).
 
+## Talks and conferences
+
+### Delphi Summit 2024
+
+* [talk title](talk URL) (in English)
+* [talk title](talk URL) (in French)
+
+### Twitch
+
+Follow my live game development coding sessions on [my Twitch channel](https://www.twitch.tv/patrickpremartin) or as replays on [Serial Streameur](https://serialstreameur.fr) mostly in French.
+
 ## Using this library
 
 You can also [visit the library website](https://tabledatasync.developpeur-pascal.fr/) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
@@ -21,6 +32,16 @@ To download this code repository, we recommend using "git", but you can also dow
 This repository uses dependencies in the form of sub-modules. They will be absent from the ZIP file. You'll have to download them by hand.
 
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) must be installed in the samples/lib-externes/librairies subfolder.
+
+## Compatibility
+
+As an [Embarcadero MVP](https://www.embarcadero.com/resources/partners/mvp-directory), I benefit from the latest versions of [Delphi](https://www.embarcadero.com/products/delphi) and [C++ Builder](https://www.embarcadero.com/products/cbuilder) in [RAD Studio](https://www.embarcadero.com/products/rad-studio) as soon as they are released. I therefore work with these versions.
+
+Normally, my libraries and components should also run on at least the current version of [Delphi Community Edition](https://www.embarcadero.com/products/delphi/starter).
+
+There's no guarantee of compatibility with earlier versions, even though I try to keep my code clean and avoid using too many of the new ways of writing in it (type inference, inline var and multiline strings).
+
+If you detect any anomalies on earlier versions, please don't hesitate to [report them](https://github.com/DeveloppeurPascal/TableDataSync4Delphi/issues) so that I can test and try to correct or provide a workaround.
 
 ## License to use this code repository and its contents
 
