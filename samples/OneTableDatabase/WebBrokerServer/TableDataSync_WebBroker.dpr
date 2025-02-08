@@ -1,3 +1,40 @@
+﻿/// <summary>
+/// ***************************************************************************
+///
+/// Table Data Sync for Delphi
+///
+/// Copyright 2017-2025 Patrick PREMARTIN under AGPL 3.0 license.
+///
+/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+/// DEALINGS IN THE SOFTWARE.
+///
+/// ***************************************************************************
+///
+/// A Delphi client/server library to synchronize table records over the
+/// rainbows.
+///
+/// ***************************************************************************
+///
+/// Author(s) :
+/// Patrick PREMARTIN
+///
+/// Site :
+/// https://tabledatasync.developpeur-pascal.fr/
+///
+/// Project site :
+/// https://github.com/DeveloppeurPascal/TableDataSync4Delphi
+///
+/// ***************************************************************************
+/// File last update : 2025-02-08T18:20:16.000+01:00
+/// Signature : f36b56ef08354973f046eb6ea4517744f65169a0
+/// ***************************************************************************
+/// </summary>
+
 program TableDataSync_WebBroker;
 {$APPTYPE CONSOLE}
 
@@ -11,7 +48,7 @@ uses
   Web.WebBroker,
   ServerConst1 in 'ServerConst1.pas',
   SampleWebModuleUnit in 'SampleWebModuleUnit.pas' {SampleWebModule: TWebModule},
-  Olf.TableDataSync.WebModuleUnit in '..\..\..\servers\WebBroker\Olf.TableDataSync.WebModuleUnit.pas' {OlfTDSWebModule: TWebModule};
+  Olf.TableDataSync.WebModuleUnit in '..\..\..\src\Server-WebBroker\Olf.TableDataSync.WebModuleUnit.pas' {OlfTDSWebModule: TWebModule};
 
 {$R *.res}
 
