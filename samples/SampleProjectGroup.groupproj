@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2B95167A-87B8-47CD-88E4-23AC0D0D67A7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="OneTableDatabase\FMXClient\OneTableDatabaseSample.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="OneTableDatabase\WebBrokerServer\TableDataSync_WebBroker.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="OneTableDatabaseSample">
+        <MSBuild Projects="OneTableDatabase\FMXClient\OneTableDatabaseSample.dproj"/>
+    </Target>
+    <Target Name="OneTableDatabaseSample:Clean">
+        <MSBuild Projects="OneTableDatabase\FMXClient\OneTableDatabaseSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OneTableDatabaseSample:Make">
+        <MSBuild Projects="OneTableDatabase\FMXClient\OneTableDatabaseSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TableDataSync_WebBroker">
+        <MSBuild Projects="OneTableDatabase\WebBrokerServer\TableDataSync_WebBroker.dproj"/>
+    </Target>
+    <Target Name="TableDataSync_WebBroker:Clean">
+        <MSBuild Projects="OneTableDatabase\WebBrokerServer\TableDataSync_WebBroker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TableDataSync_WebBroker:Make">
+        <MSBuild Projects="OneTableDatabase\WebBrokerServer\TableDataSync_WebBroker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="OneTableDatabaseSample;TableDataSync_WebBroker"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="OneTableDatabaseSample:Clean;TableDataSync_WebBroker:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="OneTableDatabaseSample:Make;TableDataSync_WebBroker:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
