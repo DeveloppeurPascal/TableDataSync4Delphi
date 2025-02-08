@@ -1,3 +1,40 @@
+/// <summary>
+/// ***************************************************************************
+///
+/// Table Data Sync for Delphi
+///
+/// Copyright 2017-2025 Patrick PREMARTIN under AGPL 3.0 license.
+///
+/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+/// DEALINGS IN THE SOFTWARE.
+///
+/// ***************************************************************************
+///
+/// A Delphi client/server library to synchronize table records over the
+/// rainbows.
+///
+/// ***************************************************************************
+///
+/// Author(s) :
+/// Patrick PREMARTIN
+///
+/// Site :
+/// https://tabledatasync.developpeur-pascal.fr/
+///
+/// Project site :
+/// https://github.com/DeveloppeurPascal/TableDataSync4Delphi
+///
+/// ***************************************************************************
+/// File last update : 2025-02-05T20:59:38.205+01:00
+/// Signature : 6cbc5db9ac9c13f37c2aded63f5bc2a3bb437d6c
+/// ***************************************************************************
+/// </summary>
+
 unit Olf.TableDataSync.WebModuleUnit;
 
 interface
