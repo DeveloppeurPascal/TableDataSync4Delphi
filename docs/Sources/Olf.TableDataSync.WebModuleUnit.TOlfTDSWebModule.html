@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Table Data Sync for Delphi: Olf.TableDataSync.WebModuleUnit: Class TOlfTDSWebModule</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Table Data Sync for Delphi</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<span id="TOlfTDSWebModule"></span><h1 class="cio">Class TOlfTDSWebModule</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="Olf.TableDataSync.WebModuleUnit.html">Olf.TableDataSync.WebModuleUnit</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TOlfTDSWebModule = class(TWebModule)</code></p>
+<h2 class="description">Description</h2>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TWebModule</li>
+<li class="thisitem">TOlfTDSWebModule</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#APISrv2Loc">APISrv2Loc</a></strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#APILoc2Srv">APILoc2Srv</a></strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#APILogin">APILogin</a></strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#APILogout">APILogout</a></strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#OlfTDSWebModule_404PageNotFoundAction">OlfTDSWebModule_404PageNotFoundAction</a></strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#getPostValueAsString">getPostValueAsString</a></strong>(Request: TWebRequest; FieldName: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#getPostValueAsInteger">getPostValueAsInteger</a></strong>(Request: TWebRequest; FieldName: string): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#getPostValueAsCardinal">getPostValueAsCardinal</a></strong>(Request: TWebRequest; FieldName: string) : cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#LoginCheck">LoginCheck</a></strong>(Request: TWebRequest): boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#GetConnectionDefName">GetConnectionDefName</a></strong>(Request: TWebRequest): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#isTableSrv2LocOk">isTableSrv2LocOk</a></strong>(ATableName: string): boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#isTableLoc2SrvOk">isTableLoc2SrvOk</a></strong>(ATableName: string): boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.WebModuleUnit.TOlfTDSWebModule.html#Logout">Logout</a></strong>(Request: TWebRequest); virtual;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="APISrv2Loc"></span><code>procedure <strong>APISrv2Loc</strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="APILoc2Srv"></span><code>procedure <strong>APILoc2Srv</strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="APILogin"></span><code>procedure <strong>APILogin</strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="APILogout"></span><code>procedure <strong>APILogout</strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OlfTDSWebModule_404PageNotFoundAction"></span><code>procedure <strong>OlfTDSWebModule_404PageNotFoundAction</strong>(Sender: TObject; Request: TWebRequest; Response: TWebResponse; var Handled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getPostValueAsString"></span><code>function <strong>getPostValueAsString</strong>(Request: TWebRequest; FieldName: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Retourne la valeur d'un paramètre reçu en POST sous forme de chaîne </p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getPostValueAsInteger"></span><code>function <strong>getPostValueAsInteger</strong>(Request: TWebRequest; FieldName: string): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Retourne la valeur d'un paramètre reçu en POST sous forme d'entier signé </p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getPostValueAsCardinal"></span><code>function <strong>getPostValueAsCardinal</strong>(Request: TWebRequest; FieldName: string) : cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Retourne la valeur d'un paramètre reçu en POST sous forme d'entier non signé </p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoginCheck"></span><code>function <strong>LoginCheck</strong>(Request: TWebRequest): boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Déclenché lors de la connexion d'un client pour une synchronisation de base de données. Permet de refuser la connexion et donc l'opération de synchronisation. </p>
+<p>
+ Default : False</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetConnectionDefName"></span><code>function <strong>GetConnectionDefName</strong>(Request: TWebRequest): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Retourne la chaîne de connexion à la base de données à utiliser selon les infos d'ouverture de session transmises par le client Appelée une fois l'autorisation de connexion validée par LoginCheck() (avec les mêmes paramètres) </p>
+<p>
+ Default : empty string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="isTableSrv2LocOk"></span><code>function <strong>isTableSrv2LocOk</strong>(ATableName: string): boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Check if the table can be synchronized from the Server to the Client </p>
+<p>
+ Default : True</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="isTableLoc2SrvOk"></span><code>function <strong>isTableLoc2SrvOk</strong>(ATableName: string): boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Check if the table can be synchronized from the Client to the Server </p>
+<p>
+ Default : True</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Logout"></span><code>procedure <strong>Logout</strong>(Request: TWebRequest); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Déclenché lors de la fermeture d'une session de synchronisation pour une table. </p>
+<p>
+ Default : does nothing</p>
+</td></tr>
+</table>
+<a href="https://tabledatasync.developpeur-pascal.fr" target="_blank">Table Data Sync for Delphi</a> (c) 2017-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

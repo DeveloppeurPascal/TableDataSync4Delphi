@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Table Data Sync for Delphi: Olf.TableDataSync: Class TOlfTDSTable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Table Data Sync for Delphi</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<span id="TOlfTDSTable"></span><h1 class="cio">Class TOlfTDSTable</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="Olf.TableDataSync.html">Olf.TableDataSync</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TOlfTDSTable = class(TComponent)</code></p>
+<h2 class="description">Description</h2>
+<h6 class="description_section">Attributes</h6>
+<dl class="attributes">
+  <dt><code>ComponentPlatformsAttribute</code>(pidAllPlatforms)</dt>
+  <dd></dd>
+</dl>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
+<li class="ancestor">TComponent</li>
+<li class="thisitem">TOlfTDSTable</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.TOlfTDSTable.html#FKeyList">FKeyList</a></strong>: <a href="Olf.TableDataSync.html#TOlfTDSFieldList">TOlfTDSFieldList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.TOlfTDSTable.html#FForeignKeyList">FForeignKeyList</a></strong>: <a href="Olf.TableDataSync.html#TOlfTDSForeignKeyList">TOlfTDSForeignKeyList</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#getChangedDateTimeFieldName">getChangedDateTimeFieldName</a></strong>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#getChangedFieldName">getChangedFieldName</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#getNoSeqFieldName">getNoSeqFieldName</a></strong>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#DoSynchro">DoSynchro</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#Step01OpenSession">Step01OpenSession</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#Step02RemoteToLocal">Step02RemoteToLocal</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#Step03LocalToRemote">Step03LocalToRemote</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#Step04CloseSession">Step04CloseSession</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#StartSynchro">StartSynchro</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#StopSynchro">StopSynchro</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#AddKey">AddKey</a></strong>(AKeyField: <a href="Olf.TableDataSync.TOlfTDSField.html">TOlfTDSField</a>): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#AddKey">AddKey</a></strong>(AFieldName, ASyncFieldName: string): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#AddKey">AddKey</a></strong>(AFieldName: string): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#AddForeignKey">AddForeignKey</a></strong>(AForeignKey: <a href="Olf.TableDataSync.TOlfTDSForeignKey.html">TOlfTDSForeignKey</a>) : <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#AddForeignKey">AddForeignKey</a></strong>(ALocalFieldName: string; AForeignTableName: string; AForeignFieldName: string): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#AddForeignKey">AddForeignKey</a></strong>(ALocalFieldName, ALocalSyncFieldName: string; AForeignTableName: string; AForeignFieldName, AForeignSyncFieldName : string): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#Create">Create</a></strong>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#Database">Database</a></strong>: <a href="Olf.TableDataSync.TOlfTDSDatabase.html">TOlfTDSDatabase</a> read FDatabase write SetDatabase;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#TableName">TableName</a></strong>: string read FTableName write SetTableName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#SyncType">SyncType</a></strong>: <a href="Olf.TableDataSync.html#TOlfTDSSyncType">TOlfTDSSyncType</a> read FSyncType write SetSyncType;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#ChangedFieldName">ChangedFieldName</a></strong>: string read FChangedFieldName
+      write SetChangedFieldName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#ChangedDateTimeFieldName">ChangedDateTimeFieldName</a></strong>: string read FChangedDateTimeFieldName
+      write SetChangedDateTimeFieldName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#TableDeleteType">TableDeleteType</a></strong>: <a href="Olf.TableDataSync.html#TOlfTDSTableDeleteType">TOlfTDSTableDeleteType</a> read FTableDeleteType
+      write SetTableDeleteType;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#NoSeqFieldName">NoSeqFieldName</a></strong>: string read FNoSeqFieldName
+      write SetNoSeqFieldName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#onSynchroStart">onSynchroStart</a></strong>: TNotifyEvent read FonSynchroStart
+      write SetonSynchroStart;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#onSynchroStop">onSynchroStop</a></strong>: TNotifyEvent read FonSynchroStop
+      write SetonSynchroStop;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#onSessionOpen">onSessionOpen</a></strong>: <a href="Olf.TableDataSync.html#TOlfTDSTableSessionOpenEvent">TOlfTDSTableSessionOpenEvent</a> read FonSessionOpen
+      write SetonSessionOpen;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="Olf.TableDataSync.TOlfTDSTable.html#onSessionClose">onSessionClose</a></strong>: <a href="Olf.TableDataSync.html#TOlfTDSTableSessionCloseEvent">TOlfTDSTableSessionCloseEvent</a> read FonSessionClose
+      write SetonSessionClose;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FKeyList"></span><code><strong>FKeyList</strong>: <a href="Olf.TableDataSync.html#TOlfTDSFieldList">TOlfTDSFieldList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FForeignKeyList"></span><code><strong>FForeignKeyList</strong>: <a href="Olf.TableDataSync.html#TOlfTDSForeignKeyList">TOlfTDSForeignKeyList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getChangedDateTimeFieldName"></span><code>function <strong>getChangedDateTimeFieldName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getChangedFieldName"></span><code>function <strong>getChangedFieldName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="getNoSeqFieldName"></span><code>function <strong>getNoSeqFieldName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DoSynchro"></span><code>procedure <strong>DoSynchro</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Step01OpenSession"></span><code>procedure <strong>Step01OpenSession</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Step02RemoteToLocal"></span><code>procedure <strong>Step02RemoteToLocal</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Step03LocalToRemote"></span><code>procedure <strong>Step03LocalToRemote</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Step04CloseSession"></span><code>procedure <strong>Step04CloseSession</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="StartSynchro"></span><code>procedure <strong>StartSynchro</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="StopSynchro"></span><code>procedure <strong>StopSynchro</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddKey"></span><code>function <strong>AddKey</strong>(AKeyField: <a href="Olf.TableDataSync.TOlfTDSField.html">TOlfTDSField</a>): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddKey"></span><code>function <strong>AddKey</strong>(AFieldName, ASyncFieldName: string): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddKey"></span><code>function <strong>AddKey</strong>(AFieldName: string): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddForeignKey"></span><code>function <strong>AddForeignKey</strong>(AForeignKey: <a href="Olf.TableDataSync.TOlfTDSForeignKey.html">TOlfTDSForeignKey</a>) : <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddForeignKey"></span><code>function <strong>AddForeignKey</strong>(ALocalFieldName: string; AForeignTableName: string; AForeignFieldName: string): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddForeignKey"></span><code>function <strong>AddForeignKey</strong>(ALocalFieldName, ALocalSyncFieldName: string; AForeignTableName: string; AForeignFieldName, AForeignSyncFieldName : string): <a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Database"></span><code>property <strong>Database</strong>: <a href="Olf.TableDataSync.TOlfTDSDatabase.html">TOlfTDSDatabase</a> read FDatabase write SetDatabase;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="TableName"></span><code>property <strong>TableName</strong>: string read FTableName write SetTableName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="SyncType"></span><code>property <strong>SyncType</strong>: <a href="Olf.TableDataSync.html#TOlfTDSSyncType">TOlfTDSSyncType</a> read FSyncType write SetSyncType;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="ChangedFieldName"></span><code>property <strong>ChangedFieldName</strong>: string read FChangedFieldName
+      write SetChangedFieldName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="ChangedDateTimeFieldName"></span><code>property <strong>ChangedDateTimeFieldName</strong>: string read FChangedDateTimeFieldName
+      write SetChangedDateTimeFieldName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="TableDeleteType"></span><code>property <strong>TableDeleteType</strong>: <a href="Olf.TableDataSync.html#TOlfTDSTableDeleteType">TOlfTDSTableDeleteType</a> read FTableDeleteType
+      write SetTableDeleteType;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="NoSeqFieldName"></span><code>property <strong>NoSeqFieldName</strong>: string read FNoSeqFieldName
+      write SetNoSeqFieldName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="onSynchroStart"></span><code>property <strong>onSynchroStart</strong>: TNotifyEvent read FonSynchroStart
+      write SetonSynchroStart;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Déclenché avant démarrage de la synchronisation de la table en cours </p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="onSynchroStop"></span><code>property <strong>onSynchroStop</strong>: TNotifyEvent read FonSynchroStop
+      write SetonSynchroStop;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Déclenché après synchronisation de la table en cours </p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="onSessionOpen"></span><code>property <strong>onSessionOpen</strong>: <a href="Olf.TableDataSync.html#TOlfTDSTableSessionOpenEvent">TOlfTDSTableSessionOpenEvent</a> read FonSessionOpen
+      write SetonSessionOpen;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Déclenché avant la demande de connexion pour synchroniser la table en cours. Permet d'ajouter des éléments complémentaires à transmettre au serveur (user/password, infos de base de données, ...) sous forme de paires clé/valeur qui seront traités lors du &quot;login&quot;. </p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="onSessionClose"></span><code>property <strong>onSessionClose</strong>: <a href="Olf.TableDataSync.html#TOlfTDSTableSessionCloseEvent">TOlfTDSTableSessionCloseEvent</a> read FonSessionClose
+      write SetonSessionClose;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ Déclenché en fermeture de session, suite à une synchronisation de la table en cours. Permet de transmettre des éléments au serveur sous forme de clé/valeur qui seront traités lors du &quot;logout&quot; </p>
+</td></tr>
+</table>
+<a href="https://tabledatasync.developpeur-pascal.fr" target="_blank">Table Data Sync for Delphi</a> (c) 2017-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Table Data Sync for Delphi: Olf.TableDataSync</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Table Data Sync for Delphi</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<h1 class="unit">Unit Olf.TableDataSync</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+ ***************************************************************************
+
+<p>Table Data Sync for Delphi
+
+<p>Copyright 2017-2025 Patrick PREMARTIN under AGPL 3.0 license.
+
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<p>***************************************************************************
+
+<p>A Delphi client/server library to synchronize table records over the rainbows.
+
+<p>***************************************************************************
+
+<p>Author(s) : Patrick PREMARTIN
+
+<p>Site : <a href="https://tabledatasync.developpeur-pascal.fr/">https://tabledatasync.developpeur-pascal.fr/</a>
+
+<p>Project site : <a href="https://github.com/DeveloppeurPascal/TableDataSync4Delphi">https://github.com/DeveloppeurPascal/TableDataSync4Delphi</a>
+
+<p>*************************************************************************** File last update : 2025-02-05T20:59:38.205+01:00 Signature : 163b1945fb540509f5b6124fb5e24f086ac306f4 *************************************************************************** </p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>System.SysUtils</li><li>System.Classes</li><li>System.Generics.Collections</li><li>System.JSON</li><li>FireDAC.Stan.Intf</li><li>FireDAC.Stan.Option</li><li>FireDAC.Stan.Error</li><li>FireDAC.UI.Intf</li><li>FireDAC.Phys.Intf</li><li>FireDAC.Stan.Def</li><li>FireDAC.Stan.Pool</li><li>FireDAC.Stan.Async</li><li>FireDAC.Phys</li><li>FireDAC.CONSOLEUI.Wait</li><li>Data.DB</li><li>FireDAC.Comp.Client</li><li>FireDAC.Comp.DataSet</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Olf.TableDataSync.TOlfTDSDatabase.html"><code>TOlfTDSDatabase</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="Olf.TableDataSync.TOlfTDSTable.html"><code>TOlfTDSTable</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Olf.TableDataSync.TOlfTDSField.html"><code>TOlfTDSField</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="Olf.TableDataSync.TOlfTDSForeignKey.html"><code>TOlfTDSForeignKey</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Olf.TableDataSync.TOlfTDSException.html"><code>TOlfTDSException</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Olf.TableDataSync.html#Register">Register</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSTableList">TOlfTDSTableList</a></strong> = TList&lt;<a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSFieldList">TOlfTDSFieldList</a></strong> = TObjectList&lt;<a href="Olf.TableDataSync.TOlfTDSField.html">TOlfTDSField</a>&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSForeignKeyList">TOlfTDSForeignKeyList</a></strong> = TObjectList&lt;<a href="Olf.TableDataSync.TOlfTDSForeignKey.html">TOlfTDSForeignKey</a>&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSSyncProgressEvent">TOlfTDSSyncProgressEvent</a></strong> = procedure(Step, MaxSteps: Cardinal) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSTableSessionOpenEvent">TOlfTDSTableSessionOpenEvent</a></strong> = procedure(SessionParams: TJSONObject) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSTableSessionCloseEvent">TOlfTDSTableSessionCloseEvent</a></strong> = procedure(SessionParams: TJSONObject) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSSyncType">TOlfTDSSyncType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSSyncState">TOlfTDSSyncState</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSSyncMode">TOlfTDSSyncMode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSServerProtocol">TOlfTDSServerProtocol</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSExceptionType">TOlfTDSExceptionType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#TOlfTDSTableDeleteType">TOlfTDSTableDeleteType</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#COlfTDSAPIVersion">COlfTDSAPIVersion</a></strong> = 20211111;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#COlfTDSDefaultServerProtocol">COlfTDSDefaultServerProtocol</a></strong> = 'http';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#COlfTDSDefaultServerIPOrDomain">COlfTDSDefaultServerIPOrDomain</a></strong> = '127.0.0.1';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#COlfTDSDefaultServerPort">COlfTDSDefaultServerPort</a></strong> = 80;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#COlfTDSDefaultServerFolder">COlfTDSDefaultServerFolder</a></strong> = '/';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#COlfTDSDefaultChangedFieldName">COlfTDSDefaultChangedFieldName</a></strong> = 'SyncChanged';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#COlfTDSDefaultChangedDateTimeFieldName">COlfTDSDefaultChangedDateTimeFieldName</a></strong> = 'SyncChangedDateTime';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Olf.TableDataSync.html#COlfTDSDefaultNoSeqFieldName">COlfTDSDefaultNoSeqFieldName</a></strong> = 'SyncNoSeq';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Register"></span><code>procedure <strong>Register</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSTableList"></span><code><strong>TOlfTDSTableList</strong> = TList&lt;<a href="Olf.TableDataSync.TOlfTDSTable.html">TOlfTDSTable</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSFieldList"></span><code><strong>TOlfTDSFieldList</strong> = TObjectList&lt;<a href="Olf.TableDataSync.TOlfTDSField.html">TOlfTDSField</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSForeignKeyList"></span><code><strong>TOlfTDSForeignKeyList</strong> = TObjectList&lt;<a href="Olf.TableDataSync.TOlfTDSForeignKey.html">TOlfTDSForeignKey</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSSyncProgressEvent"></span><code><strong>TOlfTDSSyncProgressEvent</strong> = procedure(Step, MaxSteps: Cardinal) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSTableSessionOpenEvent"></span><code><strong>TOlfTDSTableSessionOpenEvent</strong> = procedure(SessionParams: TJSONObject) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSTableSessionCloseEvent"></span><code><strong>TOlfTDSTableSessionCloseEvent</strong> = procedure(SessionParams: TJSONObject) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSSyncType"></span><code><strong>TOlfTDSSyncType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="LocalToServer">LocalToServer</span></li>
+<li>
+<span id="ServerToLocal">ServerToLocal</span></li>
+<li>
+<span id="Mirroring">Mirroring</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSSyncState"></span><code><strong>TOlfTDSSyncState</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Stopped">Stopped</span></li>
+<li>
+<span id="Started">Started</span></li>
+<li>
+<span id="Waiting">Waiting</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSSyncMode"></span><code><strong>TOlfTDSSyncMode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Manual">Manual</span></li>
+<li>
+<span id="Auto">Auto</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSServerProtocol"></span><code><strong>TOlfTDSServerProtocol</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="HTTP">HTTP</span></li>
+<li>
+<span id="HTTPS">HTTPS</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSExceptionType"></span><code><strong>TOlfTDSExceptionType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="LocalKeyUnknown">LocalKeyUnknown</span></li>
+<li>
+<span id="ForeignKeyUnknown">ForeignKeyUnknown</span></li>
+<li>
+<span id="TableUnknown">TableUnknown</span></li>
+<li>
+<span id="ForeignTableUnknown">ForeignTableUnknown</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOlfTDSTableDeleteType"></span><code><strong>TOlfTDSTableDeleteType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Logical">Logical</span></li>
+<li>
+<span id="Physical">Physical</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="COlfTDSAPIVersion"></span><code><strong>COlfTDSAPIVersion</strong> = 20211111;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Version de l'API gérée par ce fichier</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="COlfTDSDefaultServerProtocol"></span><code><strong>COlfTDSDefaultServerProtocol</strong> = 'http';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Valeurs par défaut de l'accès au serveur de synchronisation par défaut</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="COlfTDSDefaultServerIPOrDomain"></span><code><strong>COlfTDSDefaultServerIPOrDomain</strong> = '127.0.0.1';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="COlfTDSDefaultServerPort"></span><code><strong>COlfTDSDefaultServerPort</strong> = 80;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="COlfTDSDefaultServerFolder"></span><code><strong>COlfTDSDefaultServerFolder</strong> = '/';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="COlfTDSDefaultChangedFieldName"></span><code><strong>COlfTDSDefaultChangedFieldName</strong> = 'SyncChanged';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Valeurs par défaut des champs de base de données utilisés pour la synchro</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="COlfTDSDefaultChangedDateTimeFieldName"></span><code><strong>COlfTDSDefaultChangedDateTimeFieldName</strong> = 'SyncChangedDateTime';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="COlfTDSDefaultNoSeqFieldName"></span><code><strong>COlfTDSDefaultNoSeqFieldName</strong> = 'SyncNoSeq';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<a href="https://tabledatasync.developpeur-pascal.fr" target="_blank">Table Data Sync for Delphi</a> (c) 2017-2025 <a href="https://patrick.premartin.fr" target="_blank">Patrick PREMARTIN</a> - Powered by <a href="https://pasdoc.github.io/" target="_blank">PasDoc</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>
